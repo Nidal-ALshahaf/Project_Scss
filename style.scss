@@ -1,0 +1,120 @@
+// General Style
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f7ca71;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+h6 {
+    font-weight: normal;
+}
+.container {
+    width: 90%;
+    margin:0 auto;
+    padding: 0 1rem;
+}
+
+// style
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 5rem;
+    section {
+          width: 37.5rem;
+    }
+    .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .right {
+        padding: 0rem 2rem;
+    }
+    .sub-title {
+        font-size: 1.2rem;
+        margin-top: -1.5rem;
+        margin-bottom: 0rem;
+    }
+    .bold-text {
+        font-weight: 600;
+    }
+    .text-title {
+        margin: 1rem 0rem;
+        font-size: 2.7rem;
+        letter-spacing: 1px;
+        hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+    }
+    ul {
+        padding: 0rem 2rem 0px 3rem;
+    }
+    .image {
+        width: 95%;
+        // padding-right: 2rem;
+    }
+    ul {
+        padding: 0rem 2rem 0px 5rem;
+    }
+    h6,
+    ul li {
+        padding: 0.3rem 0rem;
+        font-size: 1.1rem;
+    }
+}
+// Media Querries
+// Extra small devices
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+    .box {
+        padding-top: 0rem;
+        .sub-title {
+            margin-top: 1rem;
+        }
+
+        .text-title {
+            font-size: 2rem;
+            margin: 1.5rem 0rem;
+        }
+        .image {
+            width: 100%;
+            // padding-right: 2rem;
+        }
+        h6 {
+            margin: 0.8rem 0rem;
+        }
+        ul {
+            padding: 0rem 3rem 0px 3rem;
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container {
+        width: 95%;
+    }
+    .box {
+        flex-direction: column-reverse;
+        section {
+            width: 100%;
+        }
+        .sub-title {
+            margin-top: 1rem;
+        }
+        .text-title {
+            font-size: 2rem;
+            margin: 1.5rem 0rem;
+        }
+        .image {
+            max-width: 100%;
+        }
+        h6 {
+            margin: 0.8rem 0rem;
+        }
+    }
+}
